@@ -13,37 +13,37 @@ using namespace std;
 
 void Money::setDollars(double newDollars)
 {
-	if (newDollars > 0)
-		dollars = newDollars;
-	else
-	{
-		cout<<"Invalid argument in mutator function: Aborting program.";
-		exit(1);
-	}
+    if (newDollars > 0)
+        dollars = newDollars;
+    else
+    {
+        cout<<"Invalid argument in mutator function: Aborting program.";
+        exit(1);
+    }
 }
 
 void Money::setCents(double newCents)
 {
-	if (newCents > 0 && newCents < 1)
-		cents = newCents;
-	else
-	{
-		cout<<"Invalid argument to mutator function: Aborting program.";
-		exit(1);
-	}
+    if (newCents > 0 && newCents < 1)
+        cents = newCents;
+    else
+    {
+        cout<<"Invalid argument to mutator function: Aborting program.";
+        exit(1);
+    }
 }
 
 double Money::getDollars()
 {
-	return dollars;
+    return dollars;
 }
 
 double Money::getCents()
 {
-	return cents;
+    return cents;
 }
 
 double Money::ouputAmount()
 {
-	return dollars+cents;
+    return dollars+cents;
 }

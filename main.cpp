@@ -15,12 +15,12 @@ void output(Money& m);
 
 int main()
 {
-	Money money;
+    Money money;
 
     input(money);
     output(money);
 
-	return 0;
+    return 0;
 }
 
 void input(Money& m)
